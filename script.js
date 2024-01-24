@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function displayData(item) {
+        console.log(item);  // Log the entire data object to the console
         updateValues(item.voltage, item.current, item.power, item.powerfactor);
     }
 
