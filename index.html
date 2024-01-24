@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DC Parameters</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin: 0;
+            background-color: #2C3E50; /* Midnight Blue */
+            color: #ECF0F1; /* Clouds (Off-White) */
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        #data-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .data-box {
+            width: 200px; /* Adjust the width as needed */
+            background-color: #3498DB; /* Dodger Blue */
+            border: 2px solid #3498DB;
+            padding: 20px;
+            margin: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .data-box h2 {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 10px;
+            background-color: #2C3E50;
+            color: #ECF0F1;
+        }
+    </style>
+</head>
+<body>
+    <h1>DC Parameters</h1>
+
+    <div id="data-container">
+        <div class="data-box" id="voltage-box">
+            <h2>Voltage</h2>
+            <p id="voltage-value">Loading...</p>
+        </div>
+
+        <div class="data-box" id="current-box">
+            <h2>Current</h2>
+            <p id="current-value">Loading...</p>
+        </div>
+
+        <div class="data-box" id="power-box">
+            <h2>Power</h2>
+            <p id="power-value">Loading...</p>
+        </div>
+
+        <div class="data-box" id="powerfactor-box">
+            <h2>Power Factor</h2>
+            <p id="powerfactor-value">Loading...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
